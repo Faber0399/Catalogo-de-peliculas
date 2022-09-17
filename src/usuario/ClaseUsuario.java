@@ -16,7 +16,10 @@ public class ClaseUsuario {
         CatalogoPelicula pelicula = new CatalogoPeliculaImp();
         switch(eleccion){
             case 1:
-                pelicula.iniciarArchivo("Catalogo de peliculas de Faber");
+                System.out.print("Por favor digita el nombre de tu futuro catalogo");
+                String nombreCatalogo=sc.nextLine();
+                pelicula.iniciarArchivo(nombreCatalogo);
+                sc.nextLine();
                 break;
             case 2:
                 System.out.println("Por favor digite el nombre de la pelicula que desea agregar: ");
