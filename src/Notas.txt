@@ -1,0 +1,15 @@
+* En este proyecto se indican las bases para trabajar con arquitecturas, 
+por ejemplo se trabaja con la capa de datos, la capa de negocio y la capa de 
+presentacion.
+* La capa de negocio y la capa de datos no se comunican entre si directamente, si no
+que utilizan las interfaces para que en al momento de hacer modificaciones en las clases,
+no se vea afectado el còdigo en gran manera.
+*Los datos se pueden almacenar en un archivo o base de datos.
+*En las interfaces tambien se puede agregar el tipo de excepcion que va 
+a arrojar nuestro metodo, las clase concreta hija debera manejar la excepcion
+*Es una buena practica anteponer la letra I al nombre de niestra Inteface, por ejemplo
+IAccesoDatos.
+*La interface de Acceso Datos tiene que ver mas con el manejo de la informacion, 
+y la interface en la capa de negocios esta mas destinada para el usuario final.
+*Bajo acoplamiento: utilizar la menor cantidad de relaciones entre las clases.
+*Alta cohesion: Cada clase se encarga de realizar su tarea.
